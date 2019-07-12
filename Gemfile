@@ -7,13 +7,16 @@ gem "bcrypt", "3.1.12"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "3.3.7"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "carrierwave", "1.2.2"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker", git: "https://github.com/stympy/faker.git", branch: "master"
 gem "figaro"
+gem "i18n-js"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "kaminari"
+gem "mini_magick", "4.7.0"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.3"
 gem "rubocop", "~> 0.54.0", require: false
@@ -34,6 +37,7 @@ group :development do
 end
 
 group :production do
+  gem "fog", "1.42"
   gem "pg", "0.20.0"
 end
 

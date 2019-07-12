@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :load_user, except: %i(index new create)
-  before_action :logged_in_user, only: %i(index edit update)
+  before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
 
@@ -24,7 +24,13 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @microposts =
+      Kaminari
+      .paginate_array(@user.microposts.ordered_by_create_at)
+      .page(params[:page])
+      .per Settings.per_page
+  end
 
   def edit; end
 
@@ -58,13 +64,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user)
           .permit :name, :email, :password, :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "please_login"
-    redirect_to login_url
   end
 
   def correct_user

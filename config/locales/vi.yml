@@ -67,3 +67,56 @@ vi:
   not_current_user: "Bạn không phải người dùng hiện tại!!"
   user_not_found: "Không tìm thấy người dùng!!"
   activate: "Kích hoạt tài khoản"
+  posted: "Đã đăng"
+  ago: "trước."
+  micropost: "Bài viết"
+  micropost_created: "Đã đăng bài viết."
+  compose_new_micropost: "Bài viết mới!"
+  micropost_feed: "Bài viết"
+  micropost_delete_successs: "Bài viết đã xóa"
+  micropost_delete_fail: "Không thể xóa bài viết"
+  over_size: "Ảnh phải bé hơn 5MB"
+  image_too_large: "Ảnh quá lớn, vui lòng chọn ảnh bé hơn!"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: khoảng 1 giờ
+        other: khoảng %{count} giờ
+      about_x_months:
+        one: khoảng 1 tháng
+        other: khoảng %{count} tháng
+      about_x_years:
+        one: khoảng 1 năm
+        other: khoảng %{count} năm
+      almost_x_years:
+        one: gần 1 năm
+        other: gần %{count} năm
+      half_a_minute: 30 giây
+      less_than_x_seconds:
+        one: chưa tới 1 giây
+        other: chưa tới %{count} giây
+      less_than_x_minutes:
+        one: chưa tới 1 phút
+        other: chưa tới %{count} phút
+      over_x_years:
+        one: hơn 1 năm
+        other: hơn %{count} năm
+      x_seconds:
+        one: 1 giây
+        other: "%{count} giây"
+      x_minutes:
+        one: 1 phút
+        other: "%{count} phút"
+      x_days:
+        one: 1 ngày
+        other: "%{count} ngày"
+      x_months:
+        one: 1 tháng
+        other: "%{count} tháng"
+    prompts:
+      second: Giây
+      minute: Phút
+      hour: Giờ
+      day: Ngày
+      month: Tháng
+      year: Năm

@@ -2,5 +2,5 @@
 
 <p><%= t "account_activation_email" %></p>
 
-<%= link_to t("activate"), edit_account_activation_url(@user.activation_token,
+<%= link_to t("activate"), edit_account_activation_url(I18n.locale, @user.activation_token,
                                                     email: @user.email) %>

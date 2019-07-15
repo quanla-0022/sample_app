@@ -77,6 +77,10 @@ vi:
   micropost_delete_fail: "Không thể xóa bài viết"
   over_size: "Ảnh phải bé hơn 5MB"
   image_too_large: "Ảnh quá lớn, vui lòng chọn ảnh bé hơn!"
+  followers: "Người theo dõi"
+  following: "Đang theo dõi"
+  follow: "Theo dõi"
+  unfollow: "Bỏ theo dõi"
   datetime:
     distance_in_words:
       about_x_hours:
